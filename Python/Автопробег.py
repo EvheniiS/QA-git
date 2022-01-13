@@ -1,0 +1,5 @@
+km = int(input())
+days = int(input())
+res1 = (km // days)
+n = (km %)
+print(res1)
