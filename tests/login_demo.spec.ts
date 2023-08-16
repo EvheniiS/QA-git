@@ -14,7 +14,6 @@ test.only('Demo login test 1', async({page}) => {
 
 test('Demo login test 2', async({page}) => {
     await page.goto ('https://opensource-demo.orangehrmlive.com/web/index.php');
-    await page.pause()
     await page.getByPlaceholder('Username').click();
     await page.getByPlaceholder('Username').fill('Admin');
     await page.getByPlaceholder('Password').click();
@@ -24,9 +23,3 @@ test('Demo login test 2', async({page}) => {
     await page.getByRole('menuitem', { name: 'Logout' }).click();
 
 })
-
-// test.only('Demo login test 3', async({page}) => {
-
-//     await page.pause();
-
-// })
